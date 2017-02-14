@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>MapLesotho - Test 2</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/oam.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section data-background="assets/ml-post.png" data-background-color="#000000" data-state="no-author" style="width:1000px;">
+          <div style="background-color: rgba(31, 59, 69, 0.9); color: #fff; padding: 20px;">
+            <h1 style="font-size:4em;">2017</h1>
+            <h4>Exam 2</h4>
+            <hr style="margin: 64px 0 32px 0" />
+            <p style="font-weight: 700; margin-bottom: 0;">Colin Broderick, Dave Corley &amp; Mark Whelan</p>
+            <!-- <p style="font-size: 24px; margin: 0 0 32px 0;"><img src="assets/entsoe-icon-white.svg" style="width: 1em; border: none; box-shadow: none; background: none; margin: 0 8px 0 0; vertical-align: sub;"> Web Editor (whatever ya want)</p> -->
+            <div style="font-size: 26px">
+              <p style="opacity: 0.6"><img src="assets/github.svg" style="width: 1em; border: none; box-shadow: none; background: none; margin: 0 16px 0 0;"> http://github.com/maplesotho</p>
+              <p style="opacity: 0.6"><img src="assets/twitter.svg" style="width: 1em; border: none; box-shadow: none; background: none; margin: 0 16px 0 0;"> #MapLesotho</p>
+            </div>
+          </div>
+
+          <aside class="notes" data-markdown>
+            
+          </aside>
+        </section>
+
+        <section>
+            <h2>Which flow below is correct for adding a layer from the POSM GIS database?</h2>
+            <div class="clearfix">
+            <ol>
+              <li class="fragment">Click on Add PostGIS -> make a new connection with POSM details -> check wifi connected to posm -> connect -> click public and add layer</li>
+              <li class="fragment">Click on manage postgis database -> connect -> add layer</li>
+              <li class="fragment">None are correct</li>
+              <li class="fragment">Click AddPostGIS layer -> select POSM connection -> click connect -> add layer from public schema</li>
+            </ol>
+            </div>
+            <aside class="notes" data-markdown>
+            </aside>         
+        </section>
+
+        <section>
+            <h2>2. What type of symbology filtering did we use for landuses layer?</h2>
+            <div class="clearfix"  data-markdown>
+              1. Rule Based
+              2. Categorized
+              3. Graduated
+              4. No symbols
+            </div>
+            <aside class="notes" data-markdown>
+            </aside>         
+        </section>
+
+        <section>
+            <p>3. I want a layer of districts, which is the right filter?</p>
+            <div class="clearfix" data-markdown>
+              1. ` "name"  = '5'`
+              2. ` "boundary"  = 'District'`
+              3. ` "other"  -> 'name'`
+              4.  `"admin_level"  = '5'`
+            </div>
+            <aside class="notes" data-markdown>
+            </aside>         
+        </section>
+        <section>
+            <h2>4. I want to label my admin layer -> how do I add labels?</h2>
+            <div class="clearfix"  data-markdown>
+              1. Edit Labeling -> Labels -> pick layer admin ->  set label field to `name`
+              2. Layer Properties -> Labels -> enable labels -> set label field to `name` -> set position
+              3. Lables -> set field to `name`.
+              4. None of these
+            </div>
+            <aside class="notes" data-markdown>
+            </aside>         
+        </section>
+        <section>
+          <h2>5. What do we use the map composer for?</h2>
+          <div class="clearfix"  data-markdown>
+              1. Making layouts for maps
+              2. Printing Maps
+              3. Editing data within a map
+              4. Mapping with OSM
+            </div>
+        </section>
+
+        <section>
+          <h2>6. How many levels of issues are there in Osmose?</h2>
+          <div class="clearfix"  data-markdown>
+              1. 1
+              2. 3
+              3. 6
+              4. 9
+            </div>
+        </section>
+
+        <section>
+          <h2>7. When you're onthe osmose main screen, what do you have to do before you can start using </h2>
+          <div class="clearfix"  data-markdown>
+              1. Enter your USername details and then select grant access to your account.
+              2. Start editing straight away
+              3. Select "Grant Access" to your account
+              4. Enter your username details
+            </div>
+        </section>
+
+        <section>
+          <h2>8. On the user statistics screen, what is the correct next step to bring you to the map with the detected issues? </h2>
+          <div class="clearfix"  data-markdown>
+              1. Select "Show Issues" on the map
+              2. Go directly to JOSM
+              3. Select Lesotho issues
+              4. Select #MapLesotho
+            </div>
+        </section>
+        
+        <section>
+          <h2>9. Select the correct steps to do after you've fixed your issue in JOSM? </h2>
+          <div class="clearfix"  data-markdown>
+              1. Upload from JOSM, click validate, return to OSMose screen and change status of issue.
+              2. Continue editing in JOSM
+              3. Return to OSMose screen and change status of selected issue
+            </div>
+        </section>
+
+        <section>
+          <h2>10. The status of an issue in osmose can be changeed to either "<BLANK>" or "<BLANK>"? </h2>
+          <div class="clearfix"  data-markdown>
+              1. Corrected or false postive
+              2. Right or True negative
+            </div>
+        </section>
+        
+
+
+
+<style type="text/css">
+  ol {list-style-type: upper-latin !important;}
+  .youtube .metric {display: inline-block; margin-bottom: 50px;}
+  .youtube .metric:last-child {margin-left: 150px;}
+  .inline {display: inline-block;}
+  .inline > a {padding: 5px; line-height: 2;border:1px solid #ccc;}
+</style>
+
+        <section data-background="assets/thanks.gif" data-background-color="#000000" data-state="no-author">
+          <div style="background-color: rgba(31, 59, 69, 0.9); color: #fff; padding: 20px;">
+            <h1>Thank you!</h1>
+            <h3>Questions?</h3>
+            <hr style="margin: 64px 0" />
+            <p style="opacity: 0.8"><img src="assets/github.svg" style="width: 32px; border: none; box-shadow: none; background: none; margin: 0 16px 0 0;"> http://github.com/entsoe-tso</p>
+            <p style="opacity: 0.8"><img src="assets/github.svg" style="width: 32px; border: none; box-shadow: none; background: none; margin: 0 16px 0 0;"> http://github.com/rustyb</p>
+            <p style="opacity: 0.8"><img src="assets/twitter.svg" style="width: 32px; border: none; box-shadow: none; background: none; margin: 0 16px 0 0;"> @rusty1052</p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.0.slim.js" integrity="sha256-L6ppAjL6jgtRmfiuigeEE5AwNI2pH/X9IBbPyanJeZw=" crossorigin="anonymous"></script>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="js/ee.js"></script>
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+
+    <style type="text/css">
+      .no-author #header-center {
+        display: none;
+      }
+      #header-center {
+        position: absolute;
+        z-index: 9999;
+        bottom: 16px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        opacity: 0.64;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      #header-center img {
+        width: 1em;
+        border: none;
+        box-shadow: none;
+        background: none;
+        margin: 0 4px 0 0;
+        vertical-align: top;
+      }
+      .social-item a {text-align: left;}
+      .impressions, .date, .minutes {display: inline-block; padding-right: 10px;color: #000;}
+    </style>
+
+    <!-- 2. Create hidden header/footer <div> -->
+    <div id="hidden" style="display:none;">
+      <div id="header">
+        <div id="header-center">
+            <img src="assets/twitter-dark.svg"> @rusty1052
+        </div>
+      </div>
+    </div>
+
+    
+    <script type="text/javascript">
+      var header = $('#header').html();
+      if ( window.location.search.match( /print-pdf/gi ) ) {
+          Reveal.addEventListener( 'ready', function( event ) {
+              $('.slide-background').append(header);
+          });
+      }
+      else {
+          $('div.reveal').append(header);
+     }
+    </script>
+  </body>
+</html>
